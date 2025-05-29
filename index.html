@@ -42,64 +42,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
   <style>
-    .navbar {
-      background-color: rgba(235, 188, 188, 0.9);
-      height: 80px;
-      border-radius: 14px;
-      padding: 0.5rem;
-      margin-bottom: 150px;
-    }
-
-    .navbar-brand {
-      font-weight: 500;
-      color: green;
-      font-size: 24px;
-    }
-
-    .navbar-toggler {
-      border: none;
-      font-size: 1.25rem;
-    }
-
-    .navbar-toggler:focus,
-    .btn-close:focus {
-      box-shadow: none;
-      outline: none;
-    }
-
-    .nav-link {
-      color: #666777;
-      font-weight: 500;
-      position: relative;
-    }
-
-    .nav-link:hover,
-    .nav-link.active {
-      color: rgb(0, 0, 0);
-    }
-
-    @media (min-width : 991px) {
-      .nav-link::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%);
-        width: 0%;
-        height: 2px;
-        background-color: rgb(14, 99, 255);
-        visibility: hidden;
-        transition: 0.3s ease-in-out;
-      }
-
-      .nav-link:hover::before,
-      .nav-link.active::before {
-        visibility: visible;
-        width: 100%;
-      }
-    }
-
-    .hero-slider { 
+    .hero-slider {
       position: relative;
       width: 100%;
       height: 55vh;
@@ -129,7 +72,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: white;
+      color: rgb(255, 255, 255);
       font-size: 2.5rem;
       text-align: center;
       font-weight: bold;
@@ -167,28 +110,188 @@
 </head>
 
 <body class="index-page">
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center sticky-top" style="background-color: rgb(224, 224, 41,0.9); 
+            border-radius: 17px;
+            height: 80px;
+            ">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Cryse</h1>
+      <a href="index.html" class="d-flex">
+        <img src="p-logo.png" alt="" 
+        style="max-width: 130px; 
+        height: auto; display: flex; 
+        justify-content: center;
+        position:relative; bottom: 10px;">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html" style="font-size: 17px; font-weight: bold;">Home</a></li>
+          <li><a href="about.html" style="font-size: 17px; font-weight: bold;">About</a></li>
+          <li><a href="index.html#contact" style="font-size: 17px; font-weight: bold;">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
     </div>
   </header>
 
-  <main class="main">
-    <!-- Produits slider -->
+  <main class="main"> 
+    <!-- Problème Section -->
 
-    <div class="hero-slider p5">
+    <section id="problem" class="py-17 bg-gradient-to-b from-white to-blue-50">
+      <div class="container mx-auto px-6 lg:px-16">
+        <!-- Section Title -->
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-extrabold  mb-4" style="color: rgb(99, 98, 98); 
+              font-weight: bold; font-size: 25px;  ">
+            Redefining Recovery: Eliminating the Limits of Traditional Orthopedic Care
+          </h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            We identified a critical gap in orthopedic treatment — and we’re solving it with cutting-edge, patient-first
+            design.
+          </p>
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="grid md:grid-cols-2 gap-14 items-center">
+          <!-- Text Content -->
+          <div class="space-y-6 text-gray-700">
+            <p class="text-xl font-medium text-gray-800 leading-relaxed">
+              💡 <strong>Our journey began</strong> by listening to real patients and clinicians struggling with
+              outdated casting methods.
+            </p>
+
+            <ul class="space-y-5">
+              <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <img src="https://cdn-icons-png.flaticon.com/512/4149/4149676.png" class="w-7 h-7"
+                    alt="Ventilation Icon">
+                </div>
+                <p><strong>Lack of airflow : </strong> Traditional casts cause skin breakdown and discomfort.</p>
+              </li>
+              <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="w-7 h-7" alt="Heavy Icon">
+                </div>
+                <p><strong>Heavy & cumbersome : </strong> Difficult for patients to manage daily activities.</p>
+              </li>
+              <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3163/3163478.png" class="w-7 h-7"
+                    alt="Discomfort Icon">
+                </div>
+                <p><strong>Rigid and painful:</strong> Prolonged wear often causes secondary issues.</p>
+              </li>
+              <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" class="w-7 h-7"
+                    alt="Irritation Icon">
+                </div>
+                <p><strong>Skin damage risk:</strong> Heat and moisture create the perfect storm for irritation.</p>
+              </li>
+              <li class="flex items-start space-x-4">
+                <div class="flex-shrink-0">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2718/2718224.png" class="w-7 h-7" alt="Hygiene Icon">
+                </div>
+                <p><strong>Inadequate hygiene:</strong> Casts can't be cleaned, leading to infection risks.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image -->
+          <div class="relative">
+            <img src="photo_5886311413302019988_x.jpg" alt="Modern Orthopedic Cast"
+              class="rounded-3xl shadow-2xl border border-blue-100">
+            <div class="absolute -top-6 -left-6 w-20 h-20 bg-blue-100 rounded-full z-0"></div>
+            <div class="absolute -bottom-6 -right-6 w-28 h-28 bg-blue-200 rounded-full z-0"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Innovation Section -->
+    <section id="innovation" class="py-24 bg-white">
+      <div class="container mx-auto px-6 lg:px-16">
+        <!-- Section Title -->
+        <div class="text-center mb-20">
+          <h2 class="text-5xl font-extrabold mb-4 text-responsive" style="color: rgb(114, 108, 108); font-size: 35px;">
+            Smart Orthopedic Innovation</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Engineered for mobility. Designed for healing. Trusted by clinicians.
+          </p>
+        </div>
+
+        <div class="space-y-24">
+          <!-- Solution 1 -->
+          <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">🦴 Advanced Support for Complex Fractures</h3>
+              <p class="text-lg text-gray-700 mb-6">
+                Our proprietary orthopedic solution features a <strong>custom TPU 70A mold</strong> filled with a
+                <strong>biocompatible liquid resin</strong> that cures into a rigid shell—delivering precision support
+                with unmatched comfort.
+              </p>
+              <ul class="space-y-3 text-gray-600 text-base list-disc pl-6">
+                <li>Ventilated, flexible structure for superior skin health</li>
+                <li>Lightweight, water-resistant, and form-fitting</li>
+                <li>Built for long-term stability and patient mobility</li>
+              </ul>
+            </div>
+            <div class="relative">
+              <img src="p-ini.png" alt="Fracture Solution" class="rounded-2xl shadow-2xl border border-gray-200">
+            </div>
+          </div>
+
+          <!-- Solution 2 -->
+          <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="md:order-2">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">🩹 Smart Splinting for Simpler Cases</h3>
+              <p class="text-lg text-gray-700 mb-6">
+                A <strong>modular and ultra-lightweight splint</strong> system equipped with <strong>adaptive
+                  fasteners</strong> for quick, precise fitting.
+              </p>
+              <ul class="space-y-3 text-gray-600 text-base list-disc pl-6">
+                <li>Rapid application for emergency or outpatient use</li>
+                <li>Strap-based adjustability across all anatomies</li>
+                <li>Maximum patient independence and day-to-day function</li>
+              </ul>
+            </div>
+            <div class="relative">
+              <img src="p-verse.jpg" alt="Splint System" class="rounded-2xl shadow-2xl border border-gray-200">
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Values Icons -->
+        <div class="mt-24 pt-12 border-t border-gray-200">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+            <div>
+              <img src="accessibility-icon.png" alt="Accessibility" class="mx-auto h-20">
+              <p class="mt-4 text-green-800 font-semibold text-lg">Accessibility</p>
+            </div>
+            <div>
+              <img src="innovation-icon.png" alt="Innovation" class="mx-auto h-20">
+              <p class="mt-4 text-green-800 font-semibold text-lg">Innovation</p>
+            </div>
+            <div>
+              <img src="sustainability-icon.png" alt="Sustainability" class="mx-auto h-20">
+              <p class="mt-4 text-green-800 font-semibold text-lg">Sustainability</p>
+            </div>
+            <div>
+              <img src="empathy-icon.png" alt="Empathy" class="mx-auto h-20">
+              <p class="mt-4 text-green-800 font-semibold text-lg">Empathy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Produits slider -->
+    <div class="hero-slider p5  ">
       <div class="hero-slides" id="heroSlides">
 
         <div class="hero-slide">
@@ -211,7 +314,6 @@
       <button class="nav-arrow left-arrow" onclick="changeSlide(-1)">❮</button>
       <button class="nav-arrow right-arrow" onclick="changeSlide(1)">❯</button>
     </div>
-
     <script>
       let currentSlide = 0;
       const slides = document.getElementById('heroSlides');
@@ -227,152 +329,6 @@
     </script>
 
 
-    <!-- Problème Section -->
-
-    <section id="problem" class="py-24 bg-gradient-to-b from-white to-blue-50">
-  <div class="container mx-auto px-6 lg:px-16">
-    <!-- Section Title -->
-    <div class="text-center mb-16">
-      <h2 class="text-5xl font-extrabold  mb-4 text-yellow-400  ">
-        Redefining Recovery: Eliminating the Limits of Traditional Orthopedic Care
-      </h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        We identified a critical gap in orthopedic treatment — and we’re solving it with cutting-edge, patient-first design.
-      </p>
-    </div>
-
-    <!-- Grid Layout -->
-    <div class="grid md:grid-cols-2 gap-14 items-center">
-      <!-- Text Content -->
-      <div class="space-y-6 text-gray-700">
-        <p class="text-xl font-medium text-gray-800 leading-relaxed">
-          💡 <strong>Our journey began</strong> by listening to real patients and clinicians struggling with outdated casting methods.
-        </p>
-
-        <ul class="space-y-5">
-          <li class="flex items-start space-x-4">
-            <div class="flex-shrink-0">
-              <img src="https://cdn-icons-png.flaticon.com/512/4149/4149676.png" class="w-7 h-7" alt="Ventilation Icon">
-            </div>
-            <p><strong>Lack of airflow:</strong> Traditional casts cause skin breakdown and discomfort.</p>
-          </li>
-          <li class="flex items-start space-x-4">
-            <div class="flex-shrink-0">
-              <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="w-7 h-7" alt="Heavy Icon">
-            </div>
-            <p><strong>Heavy & cumbersome:</strong> Difficult for patients to manage daily activities.</p>
-          </li>
-          <li class="flex items-start space-x-4">
-            <div class="flex-shrink-0">
-              <img src="https://cdn-icons-png.flaticon.com/512/3163/3163478.png" class="w-7 h-7" alt="Discomfort Icon">
-            </div>
-            <p><strong>Rigid and painful:</strong> Prolonged wear often causes secondary issues.</p>
-          </li>
-          <li class="flex items-start space-x-4">
-            <div class="flex-shrink-0">
-              <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" class="w-7 h-7" alt="Irritation Icon">
-            </div>
-            <p><strong>Skin damage risk:</strong> Heat and moisture create the perfect storm for irritation.</p>
-          </li>
-          <li class="flex items-start space-x-4">
-            <div class="flex-shrink-0">
-              <img src="https://cdn-icons-png.flaticon.com/512/2718/2718224.png" class="w-7 h-7" alt="Hygiene Icon">
-            </div>
-            <p><strong>Inadequate hygiene:</strong> Casts can't be cleaned, leading to infection risks.</p>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Image -->
-      <div class="relative">
-        <img src="photo_5886311413302019988_x.jpg" alt="Modern Orthopedic Cast" class="rounded-3xl shadow-2xl border border-blue-100">
-        <div class="absolute -top-6 -left-6 w-20 h-20 bg-blue-100 rounded-full z-0"></div>
-        <div class="absolute -bottom-6 -right-6 w-28 h-28 bg-blue-200 rounded-full z-0"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-    <!-- Innovation Section -->
-    <section id="innovation" class="py-24 bg-white">
-  <div class="container mx-auto px-6 lg:px-16">
-    <!-- Section Title -->
-    <div class="text-center mb-20">
-      <h2 class="text-5xl font-extrabold text-yellow-400 mb-4">Smart Orthopedic Innovation</h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-        Engineered for mobility. Designed for healing. Trusted by clinicians.
-      </p>
-    </div>
-
-    <div class="space-y-24">
-      <!-- Solution 1 -->
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <h3 class="text-2xl font-semibold text-gray-800 mb-4">🦴 Advanced Support for Complex Fractures</h3>
-          <p class="text-lg text-gray-700 mb-6">
-            Our proprietary orthopedic solution features a <strong>custom TPU 70A mold</strong> filled with a
-            <strong>biocompatible liquid resin</strong> that cures into a rigid shell—delivering precision support with unmatched comfort.
-          </p>
-          <ul class="space-y-3 text-gray-600 text-base list-disc pl-6">
-            <li>Ventilated, flexible structure for superior skin health</li>
-            <li>Lightweight, water-resistant, and form-fitting</li>
-            <li>Built for long-term stability and patient mobility</li>
-          </ul>
-        </div>
-        <div class="relative">
-          <img src="p-ini.png" alt="Fracture Solution" class="rounded-2xl shadow-2xl border border-gray-200">
-        </div>
-      </div>
-
-      <!-- Solution 2 -->
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div class="md:order-2">
-          <h3 class="text-2xl font-semibold text-gray-800 mb-4">🩹 Smart Splinting for Simpler Cases</h3>
-          <p class="text-lg text-gray-700 mb-6">
-            A <strong>modular and ultra-lightweight splint</strong> system equipped with <strong>adaptive fasteners</strong> for quick, precise fitting.
-          </p>
-          <ul class="space-y-3 text-gray-600 text-base list-disc pl-6">
-            <li>Rapid application for emergency or outpatient use</li>
-            <li>Strap-based adjustability across all anatomies</li>
-            <li>Maximum patient independence and day-to-day function</li>
-          </ul>
-        </div>
-        <div class="relative">
-          <img src="p-verse.jpg" alt="Splint System" class="rounded-2xl shadow-2xl border border-gray-200">
-        </div>
-      </div>
-    </div>
-
-    <!-- Core Values Icons -->
-    <div class="mt-24 pt-12 border-t border-gray-200">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-        <div>
-          <img src="accessibility-icon.png" alt="Accessibility" class="mx-auto h-20">
-          <p class="mt-4 text-green-800 font-semibold text-lg">Accessibility</p>
-        </div>
-        <div>
-          <img src="innovation-icon.png" alt="Innovation" class="mx-auto h-20">
-          <p class="mt-4 text-green-800 font-semibold text-lg">Innovation</p>
-        </div>
-        <div>
-          <img src="sustainability-icon.png" alt="Sustainability" class="mx-auto h-20">
-          <p class="mt-4 text-green-800 font-semibold text-lg">Sustainability</p>
-        </div>
-        <div>
-          <img src="empathy-icon.png" alt="Empathy" class="mx-auto h-20">
-          <p class="mt-4 text-green-800 font-semibold text-lg">Empathy</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
 
 
 
@@ -384,64 +340,67 @@
 
 
 
-   <!-- Contact Section -->
-<section id="contact" class="contact section">
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p>Our mission is to to improve patients quality of life while facilitating the work of medical professionals.</p>
-  </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Our mission is to to improve patients quality of life while facilitating the work of medical professionals.
+        </p>
+      </div><!-- End Section Title -->
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <form id="contactForm" class="php-email-form" action="https://formsubmit.co/Crysealternatifteam@gmail.com" method="post">
-      <div class="row gy-4">
-        <div class="col-md-6">
-          <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
-          <input type="hidden" name="_next" value="https://cryse2025.github.io/cryse/">
-          <input type="hidden" name="_captcha" value="false">
-          <div class="invalid-feedback">Enter Your Name.</div>
-        </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <form id="contactForm" class="php-email-form" action="https://formsubmit.co/Crysealternatifteam@gmail.com"
+          method="post">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+              <input type="hidden" name="_next" value="https://cryse2025.github.io/cryse/">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="invalid-feedback">Enter Your Name.</div>
+            </div>
 
-        <div class="col-md-6">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          <div class="invalid-feedback">Enter Your Email Address.</div>
-        </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <div class="invalid-feedback">Enter Your Email Address.</div>
+            </div>
 
-        <div class="col-md-12">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Topic" required>
-          <div class="invalid-feedback">Enter The Topic.</div>
-        </div>
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Topic" required>
+              <div class="invalid-feedback">Enter The Topic.</div>
+            </div>
 
-        <div class="col-md-12">
-          <textarea class="form-control" name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
-          <div class="invalid-feedback">Your message must contain at least 10 characters..</div>
-        </div>
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" id="message" rows="6" placeholder="Your Message"
+                required></textarea>
+              <div class="invalid-feedback">Your message must contain at least 10 characters..</div>
+            </div>
 
-        <div class="col-md-12 text-center">
-          <button type="submit" id="submitBtn">
-            <span class="btn-text">Send the message</span>
-          </button>
-        </div>
+            <div class="col-md-12 text-center">
+              <button type="submit" id="submitBtn" style="background-color: rgb(0, 0, 0);">
+                <span class="btn-text">Send the message</span>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
 
-</section><!-- /Contact Section -->
+    </section><!-- /Contact Section -->
 
 
   </main>
 
-  <footer id="footer" class="footer accent-background"  >
+  <footer id="footer" class="footer accent-background" style="background-color: rgb(224, 224, 41,0.9);">
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Cryse</strong> <span>All Rights
+        <p style="font-weight: bold;  ">© <span>Copyright</span> <strong class="px-1 sitename">Cryse</strong> <span>All Rights
             Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://www.instagram.com/cryse_alternatifs"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/adam-jd-799004303"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/cryse_alternatifs" style="border: none; "><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/adam-jd-799004303" style="border: none;"><i  class="bi bi-linkedin"></i></a>
       </div>
       <div class="text-center mt-3">
         <p class="mb-0">Powered by : <strong>CMC Tangier-Tétouan-Al Hoceima</strong></p>
@@ -451,8 +410,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" style="background-color: rgb(226, 224, 66);" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short " ></i></a>
+  <a href="#" id="scroll-top" style="background-color: rgb(0, 0, 0);"
+    class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short "></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
